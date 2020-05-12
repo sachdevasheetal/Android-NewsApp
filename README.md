@@ -1,4 +1,4 @@
-# Android-NewsApp
+# NewsApp in Android
 
 ## Introduction
 
