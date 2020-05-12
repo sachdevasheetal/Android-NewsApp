@@ -10,12 +10,10 @@ When you open the app, there is a Toolbar at the top with the search icon and a 
 bar at the bottom. Both of these persists for all the 4 tabs.
 As soon as you open the app, the weather summary card of the current location of the user
 is displayed and below the weather card there is a list of 10 latest news.
-
 The current location is to be fetched from the emulator itself, which will be used to call the
 Openweathermap API to get the weather data.
 The list of news is to be fetched from the Guardians API.
 Guardians API data is being fetched from NodeJS backend hosted at GCP.
-
 Every news card is clickable to go to detailed news activity.
 Every news card has a long click feature which will open a Dialog.
 On long click on a news card, a dialog will pop up with the image, title and the option to
