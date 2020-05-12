@@ -47,3 +47,4 @@ can enter keyword to search for news. For the autosuggest API, call the Microsof
 
 ## Screenshots
 
+![](Home.PNG)
