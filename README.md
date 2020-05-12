@@ -47,4 +47,8 @@ can enter keyword to search for news. For the autosuggest API, call the Microsof
 
 ## Screenshots
 
-![](Home.PNG) ![](Headlines.PNG) ![](Trending.PNG) ![](Bookmark.PNG) ![](Search.PNG)
+<img align="left" width="200" height="400" src="Home.PNG">
+<img align="left" width="200" height="400" src="Headlines.PNG">
+<img align="left" width="200" height="400" src="Trending.PNG">
+<img align="left" width="200" height="400" src="Bookmark.PNG">
+<img align="left" width="200" height="400" src="Search.PNG">
