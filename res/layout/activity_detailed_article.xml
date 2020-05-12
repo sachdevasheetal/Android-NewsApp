@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:fillViewport="true"
+    tools:context=".ui.home.DetailedArticle"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:indeterminateTint="@color/colorPrimaryDark"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent"
+            cardview:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/fetch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Fetching News"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.501"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:foregroundGravity="center_horizontal"
+            cardview:cardCornerRadius="10dp"
+            cardview:cardUseCompatPadding="true"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/textNewsTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="67dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    cardview:layout_constraintBottom_toBottomOf="parent"
+                    cardview:layout_constraintEnd_toEndOf="parent"
+                    cardview:layout_constraintStart_toStartOf="parent"
+                    cardview:layout_constraintTop_toBottomOf="@+id/imageViewDetailed"
+                    cardview:layout_constraintVertical_bias="0" />
+
+                <ImageView
+                    android:id="@+id/imageViewDetailed"
+
+                    android:layout_width="398dp"
+                    android:layout_height="227dp"
+                    android:adjustViewBounds="true"
+                    android:padding="0dp"
+                    android:scaleType="centerCrop"
+                    cardview:layout_constraintBottom_toBottomOf="parent"
+                    cardview:layout_constraintEnd_toEndOf="parent"
+                    cardview:layout_constraintHorizontal_bias="0"
+                    cardview:layout_constraintTop_toTopOf="parent"
+                    cardview:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:id="@+id/textViewSection"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:paddingLeft="10dp"
+                    cardview:layout_constraintBottom_toBottomOf="parent"
+                    cardview:layout_constraintEnd_toStartOf="@+id/textViewDate"
+                    cardview:layout_constraintHorizontal_bias="0.123"
+                    cardview:layout_constraintStart_toStartOf="parent"
+                    cardview:layout_constraintTop_toBottomOf="@+id/textNewsTitle"
+                    cardview:layout_constraintVertical_bias="0.024" />
+
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    cardview:layout_constraintBottom_toBottomOf="parent"
+                    cardview:layout_constraintEnd_toEndOf="parent"
+                    cardview:layout_constraintTop_toBottomOf="@+id/textNewsTitle"
+                    cardview:layout_constraintVertical_bias="0.024" />
+
+                <TextView
+                    android:id="@+id/textViewAbstract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="30"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="18sp"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    cardview:layout_constraintBottom_toBottomOf="parent"
+                    cardview:layout_constraintEnd_toEndOf="parent"
+                    cardview:layout_constraintHorizontal_bias="0.492"
+                    cardview:layout_constraintStart_toStartOf="parent"
+                    cardview:layout_constraintTop_toBottomOf="@+id/textNewsTitle"
+                    cardview:layout_constraintVertical_bias="0.431" />
+
+                <TextView
+                    android:id="@+id/textViewLink"
+                    android:layout_width="235dp"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center"
+                    android:textColorLink="#000000"
+                    android:textSize="20sp"
+                    cardview:layout_constraintEnd_toEndOf="parent"
+                    cardview:layout_constraintStart_toStartOf="parent"
+                    cardview:layout_constraintTop_toBottomOf="@+id/textViewAbstract" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

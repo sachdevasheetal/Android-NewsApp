@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/mFav"
+        android:icon="@mipmap/baseline_bookmark_border_black_48dp_2x"
+        android:title="Fav"
+        app:iconTint="#FF0000"
+        app:showAsAction="always"/>
+    <item android:id="@+id/mShare"
+        android:title="detail"
+        android:icon="@mipmap/bluetwitter"
+        app:showAsAction="always"/>
+
+</menu>
