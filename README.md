@@ -21,7 +21,7 @@ In this tab there are multiple fragments of different categories.
 Every news card is clickable to go to detailed news activity.
 Every news card has a long click feature which will open a Dialog.
 On long click on a news card, a dialog will pop up with the image, title and the option to
-Bookmark and share it on Twitter as shown
+Bookmark and share it on Twitter.
 
 Trending Tab
 This tab uses MPAndroidChart 3rd party library. You must add this as a dependency.
